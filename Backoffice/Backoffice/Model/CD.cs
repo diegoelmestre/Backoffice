@@ -9,6 +9,7 @@ namespace Backoffice.Model
     {
         private String name;
         private List<Music> musicList;
+        private double price;
 
         /************************************************************************/
         /* Constructors                                                        */
@@ -18,12 +19,18 @@ namespace Backoffice.Model
         {
             this.name = "";
             this.musicList = new List<Music>();
+            this.price = 0;
         }
 
-        public CD(String _name, List<Music> _music)
+        public CD(String _name, List<Music> _musicList)
         {
             this.name = _name;
-            this.musicList = _music;
+            this.musicList = _musicList;
+            this.price = 0;
+            foreach (Music _music in this.musicList)
+            {
+                this.price = this.price + _music.getPrice();
+            }
         }
 
         /************************************************************************/
@@ -48,6 +55,17 @@ namespace Backoffice.Model
         public void removeMusic(Music _music)
         {
             this.musicList.Remove(_music);
+        }
+
+        public double getPrice()
+        {
+            return this.price;
+        }
+
+        public void setPrice(double _price)
+        {
+            this.price = _price;
+
         }
 
 

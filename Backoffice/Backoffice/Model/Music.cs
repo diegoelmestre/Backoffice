@@ -61,7 +61,7 @@ namespace Backoffice.Model
             return this.price;
         }
 
-        public void setName(double _price)
+        public void setPrice(double _price)
         {
             this.price = _price;
         }

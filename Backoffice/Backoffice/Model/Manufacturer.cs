@@ -5,10 +5,7 @@ using System.Text;
 
 namespace Backoffice.Model
 {
-    class Orders
+    class Manufacturer
     {
-        private String clientName;
-        private List<CD> cdList;
-        private double price;
     }
 }
