@@ -7,8 +7,12 @@ namespace Backoffice.Model
 {
     class Orders
     {
-        private String clientName;
+        private Client client;
         private List<CD> cdList;
-        private double price;
+        private double cdTotalPrice;
+        private DateTime orderDate;
+        private Shipper shipper;
+        private Manufacturer manufacturer;
+
     }
 }

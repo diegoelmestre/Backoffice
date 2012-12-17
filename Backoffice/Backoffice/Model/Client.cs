@@ -28,5 +28,18 @@ namespace Backoffice.Model
             this.name = _name;
             this.address = _address;
         }
+
+        /************************************************************************/
+        /* Modifiers                                                            */
+        /************************************************************************/
+        public int getId()
+        {
+            return this.id;
+        }
+
+        public void setId(int _id)
+        {
+            this.id = _id;
+        }
     }
 }
