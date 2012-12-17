@@ -14,5 +14,12 @@ namespace Backoffice.Model
         private Shipper shipper;
         private Manufacturer manufacturer;
 
+        public Orders()
+        {
+
+
+        }
+
+
     }
 }
